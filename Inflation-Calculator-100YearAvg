@@ -1,0 +1,12 @@
+function compound(n, start, end) {
+  var result = n;
+  var range = end - start;
+  
+  for (var i = 0; i < range; i++)
+    result *= 1.03564;
+  console.log("Over a span of " + range + " years, the inflation-adjusted amount would be:");
+  return result;
+}
+
+console.log(compound(1000000, 1913, 2014));
+
